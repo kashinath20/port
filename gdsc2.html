@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="gdsc3.jpg" type="image/icon type" class="icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="gdsc2.css">
+<style>
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
+
+/* Parallax section styles */
+.parallax {
+  background-image: url("gdsc5.jpg " );
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-color: black;
+}
+
+/* Main content styles */
+.content {
+  padding: 50px;
+  text-align: center;
+  animation: fadeIn 1s ease forwards; /* Fade-in animation */
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+  margin-top: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ff3333;
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Social links styles */
+
+
+/* Lower section styles */
+.lower {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+  animation: slideIn 1s ease forwards; /* Slide-in animation */
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.skills,
+.education {
+  margin-top: 50px;
+}
+
+.skills table,
+.education table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.skills th,
+.education th,
+.skills td,
+.education td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.skills th,
+.education th {
+  background-color: #080808;
+  color: #fff;
+}
+
+.skills th:first-child,
+.education th:first-child {
+  border-top-left-radius: 5px;
+}
+
+.skills th:last-child,
+.education th:last-child {
+  border-top-right-radius: 5px;
+}
+
+.skills td:first-child,
+.education td:first-child {
+  border-left: none;
+}
+
+.skills td:last-child,
+.education td:last-child {
+  border-right: none;
+}
+
+/* Add hover effect to table rows */
+.skills tr:hover,
+.education tr:hover {
+  background-color: rgb(105, 104, 104);
+  color:white;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 20px;
+  }
+
+  .img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+  .icon{
+    border-radius: 50px;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="parallax" ></div>
+
+<div class="content">
+  <div class="hero-content">
+    <img class="img" src="athu.jpg" alt="Avatar">
+    <h1 style="color: #333;">Hello, I'm Atharva Kapile </h1>
+    <h3 style="color: #333;">Cofounder & CEO, IMPERIUM</h3>
+    <h3 style="color: #333;">Media Lead</h3>
+    <p style="color: #333;">"Hi there, I'm Atharva, co-founder and media lead at Imperium. Currently, I'm pursuing a BTech in Cyber at ADYPU. At Imperium, I handle media strategies and communications, while my studies in cybersecurity fuel my passion for understanding and tackling digital challenges. Excited to be on this journey of entrepreneurship and tech innovation!"</p>
+  </div>
+  <a href="#portfolio" class="btn" class="zoom">Get in Touch</a>
+</div>
+<div class="social"><a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-youtube"></a>
+</div>
+
+<div class="lower">
+  <section class="skills">
+    <h2 style="color: #333;">Skills</h2>
+    <table>
+      <tr>
+        <th style="background-color: #080808;">Skill</th>
+        <th style="background-color: #080808;">Proficiency</th>
+      </tr>
+      <tr>
+        <td>Cybersecurity</td>
+        <td>Expert</td>
+      </tr>
+      <tr>
+        <td>Web Development</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>PYTHON</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>C++</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>VIDEO EDITING & CONTENT CREATION</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>MANAGEMENT</td>
+        <td>Intermediate</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section class="education">
+    <h2 style="color: #333;">Education</h2>
+    <table>
+      <tr>
+        <th style="background-color: #080808;">Degree</th>
+        <th style="background-color: #080808;">Institution</th>
+        <th style="background-color: #080808;">Year</th>
+      </tr>
+      <tr>
+        <td>10th</td>
+        <td>The Trinity School</td>
+        <td>2021</td>
+      </tr>
+      <tr>
+        <td>12th (Electronics)</td>
+        <td>Bharat English Jr.College</td>
+        <td>2023</td>
+      </tr>
+      <tr>
+        <td>BTech in Cyber</td>
+        <td>ADYPU</td>
+        <td>Expected 2027</td>
+      </tr>
+    </table>
+  </section>
+</div>
+
+</body>
+</html>
